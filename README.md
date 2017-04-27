@@ -1,6 +1,6 @@
 # npmdoc-global
 
-#### api documentation for  [global (v4.3.1)](https://github.com/Raynos/global)  [![npm package](https://img.shields.io/npm/v/npmdoc-global.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-global) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-global.svg)](https://travis-ci.org/npmdoc/node-npmdoc-global)
+#### basic api documentation for  [global (v4.3.2)](https://github.com/Raynos/global)  [![npm package](https://img.shields.io/npm/v/npmdoc-global.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-global) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-global.svg)](https://travis-ci.org/npmdoc/node-npmdoc-global)
 
 #### Require global variables
 
@@ -46,10 +46,10 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "5f757908c7cbabce54f386ae440e11e26b7916df",
-        "tarball": "https://registry.npmjs.org/global/-/global-4.3.1.tgz"
+        "shasum": "e76989268a6c74c38908b1305b10fc0e394e9d0f",
+        "tarball": "https://registry.npmjs.org/global/-/global-4.3.2.tgz"
     },
-    "gitHead": "65eb66c398296ef52887e0ba06a21a88eae62ab6",
+    "gitHead": "dca6193fee92549cb0a1944705f8b054beb338a2",
     "homepage": "https://github.com/Raynos/global",
     "keywords": [],
     "license": "MIT",
@@ -103,7 +103,8 @@
             ]
         }
     },
-    "version": "4.3.1"
+    "version": "4.3.2",
+    "bin": {}
 }
 ```
 
