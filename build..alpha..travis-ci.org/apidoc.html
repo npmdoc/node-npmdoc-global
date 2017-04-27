@@ -51,7 +51,7 @@
 
         href="https://github.com/Raynos/global"
 
-    >global (v4.3.1)</a>
+    >global (v4.3.2)</a>
 </h1>
 <h4>Require global variables</h4>
 <div class="apidocSectionDiv"><a
@@ -1892,8 +1892,8 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.dbTableTravisOrgCreate">
-            function <span class="apidocSignatureSpan">global.utility2.</span>dbTableTravisOrgCreate
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.dbTableCustomOrgCreate">
+            function <span class="apidocSignatureSpan">global.utility2.</span>dbTableCustomOrgCreate
             <span class="apidocSignatureSpan">(options, onError)</span>
             </a>
 
@@ -1901,8 +1901,17 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.dbTableTravisOrgUpdate">
-            function <span class="apidocSignatureSpan">global.utility2.</span>dbTableTravisOrgUpdate
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.dbTableCustomOrgCrudGetManyByQuery">
+            function <span class="apidocSignatureSpan">global.utility2.</span>dbTableCustomOrgCrudGetManyByQuery
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.dbTableCustomOrgUpdate">
+            function <span class="apidocSignatureSpan">global.utility2.</span>dbTableCustomOrgUpdate
             <span class="apidocSignatureSpan">(options, onError)</span>
             </a>
 
@@ -2630,8 +2639,17 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.requireExampleJsFromReadme">
-            function <span class="apidocSignatureSpan">global.utility2.</span>requireExampleJsFromReadme
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.requireInSandbox">
+            function <span class="apidocSignatureSpan">global.utility2.</span>requireInSandbox
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.requireReadme">
+            function <span class="apidocSignatureSpan">global.utility2.</span>requireReadme
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -6090,8 +6108,8 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.dbTableTravisOrgCreate">
-            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableTravisOrgCreate
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.dbTableCustomOrgCreate">
+            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableCustomOrgCreate
             <span class="apidocSignatureSpan">(options, onError)</span>
             </a>
 
@@ -6099,8 +6117,17 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.dbTableTravisOrgUpdate">
-            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableTravisOrgUpdate
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.dbTableCustomOrgCrudGetManyByQuery">
+            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableCustomOrgCrudGetManyByQuery
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.dbTableCustomOrgUpdate">
+            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableCustomOrgUpdate
             <span class="apidocSignatureSpan">(options, onError)</span>
             </a>
 
@@ -6828,8 +6855,17 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.requireExampleJsFromReadme">
-            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>requireExampleJsFromReadme
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.requireInSandbox">
+            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>requireInSandbox
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.global.utility2.swgg.requireReadme">
+            function <span class="apidocSignatureSpan">global.utility2.swgg.</span>requireReadme
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -11152,10 +11188,10 @@ watermarks||defaults.watermarks()}</pre></li>
         case &#x27;error&#x27;:
         case &#x27;load&#x27;:
             // do not run more than once
-            if (xhr.done) {
+            if (xhr.isDone) {
                 return;
             }
-            xhr.done = true;
+            xhr.isDone = true;
             // cleanup timerTimeout
             clearTimeout(timerTimeout);
             // cleanup requestStream and responseStream
@@ -11212,7 +11248,7 @@ watermarks||defaults.watermarks()}</pre></li>
     xhr.addEventListener(&#x27;load&#x27;, xhr.onEvent);
     xhr.addEventListener(&#x27;loadstart&#x27;, local.ajaxProgressUpdate);
     xhr.addEventListener(&#x27;progress&#x27;, local.ajaxProgressUpdate);
-    xhr.upload.addEventListener(&#x27;progress&#x27;, local.a ...</pre></li>
+    xhr.upload.addEventListener(&#x27;progress&#x27;, loc ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -11558,7 +11594,7 @@ watermarks||defaults.watermarks()}</pre></li>
             }
             Object.keys(moduleDict[prefix]).forEach(function (key) {
                 // bug-workaround - buggy electron getter / setter
-                try {
+                local.tryCatchOnError(function () {
                     if (!(/^\w[\w\-.]*?$/).test(key) || !moduleDict[prefix][key]) {
                         return;
                     }
@@ -11584,10 +11620,9 @@ watermarks||defaults.watermarks()}</pre></li>
                     ].some(function (dict) {
                         return Object.keys(dict || {}).some(function (key) {
                             // bug-workaround - buggy electron getter / setter
-                            try {
+                            return local.tryCatchOnError(function () {
                                 return typeof dict[key] === &#x27;function&#x27;;
-                            } catch (ignore) {
-                            }
+                            }, console.error);
                         });
                     });
                     if (!isModule) {
@@ -11595,8 +11630,7 @@ watermarks||defaults.watermarks()}</pre></li>
                     }
                     options.circularList.push(tmp.module);
                     options.moduleDict[tmp.name] = tmp.module;
-                } catch (ignore) {
-                }
+                }, console.error);
             });
         });
     });
@@ -12006,7 +12040,7 @@ e){return[this[0],e]}},r={},i=[];return{walk:s,dive:o,with_walkers:u,parent:func
  * - dataURL
  * - text
  */
-</span>    var data, done, reader;
+</span>    var data, isDone, reader;
     if (local.modeJs === &#x27;node&#x27;) {
         switch (encoding) {
         // readAsDataURL
@@ -12027,10 +12061,10 @@ e){return[this[0],e]}},r={},i=[];return{walk:s,dive:o,with_walkers:u,parent:func
     }
     reader = new local.global.FileReader();
     reader.onabort = reader.onerror = reader.onload = function (event) {
-        if (done) {
+        if (isDone) {
             return;
         }
-        done = true;
+        isDone = true;
         switch (event.type) {
         case &#x27;abort&#x27;:
         case &#x27;error&#x27;:
@@ -12074,7 +12108,7 @@ e){return[this[0],e]}},r={},i=[];return{walk:s,dive:o,with_walkers:u,parent:func
 <span class="apidocCodeCommentSpan">/*
  * this function will spawn an electron process to test options.url
  */
-</span>    var done, modeNext, onNext, onParallel, timerTimeout;
+</span>    var isDone, modeNext, onNext, onParallel, timerTimeout;
     if (typeof local === &#x27;object&#x27; &#x26;&#x26; local &#x26;&#x26; local.modeJs === &#x27;node&#x27;) {
         local.objectSetDefault(options, local.envSanitize(local.env));
         options.timeoutDefault = options.timeoutDefault || local.timeoutDefault;
@@ -12398,7 +12432,10 @@ return Utf8ArrayToStr(bff);
         onError();
         return;
     }
-    local.objectSetDefault(options, { blacklistDict: local });
+    local.objectSetDefault(options, {
+        blacklistDict: local,
+        require: local.requireInSandbox
+    });
     // create apidoc.html
     local.fsWriteFileWithMkdirpSync(
         local.env.npm_config_dir_build + &#x27;/apidoc.html&#x27;,
@@ -12481,7 +12518,7 @@ return Utf8ArrayToStr(bff);
         );
         // test standalone assets.app.js
         local.fs.writeFileSync(&#x27;tmp/assets.app.js&#x27;, local.assetsDict[&#x27;/assets.app.js&#x27;]);
-        local.processSpawnWithTimeout(process.argv[0], [&#x27;assets.app.js&#x27;], {
+        local.processSpawnWithTimeout(&#x27;node&#x27;, [&#x27;assets.app.js&#x27;], {
             cwd: &#x27;tmp&#x27;,
             env: {
                 PORT: (Math.random() * 0x10000) | 0x8000,
@@ -12513,19 +12550,17 @@ return Utf8ArrayToStr(bff);
 <span class="apidocCodeCommentSpan">/*
  * this function will build the customOrg
  */
-</span>    var done, onError2, onParallel;
+</span>    var isDone, onError2, onParallel;
     if (!local.env.npm_package_buildCustomOrg &#x26;&#x26; !options.modeForce) {
         onError();
         return;
     }
-    // ensure exit after 5 minutes
-    setTimeout(process.exit, 5 * 60 * 1000);
     onError2 = function (error) {
         local.onErrorDefault(error);
-        if (done) {
+        if (isDone) {
             return;
         }
-        done = true;
+        isDone = true;
         // try to recover from error
         setTimeout(onError, error &#x26;&#x26; local.timeoutDefault);
     };
@@ -12544,10 +12579,11 @@ return Utf8ArrayToStr(bff);
     options.packageJson = JSON.parse(local.fs.readFileSync(&#x27;package.json&#x27;, &#x27;utf8&#x27;));
     switch (local.env.GITHUB_ORG) {
     case &#x27;npmdoc&#x27;:
-        // update package.json
-        local.objectSetOverride(options.packageJson, local.objectLiteralize({
-            keywords: [&#x27;documentation&#x27;, local.env.npm_package_buildCustomOrg]
-        }), 2);
+        local.objectSetOverride(options, {
+            packageJson: {
+                keywords: [&#x27;documentation&#x27;, local.env.npm_package_buildCustomOrg]
+            }
+        }, 2);
         // build apidoc.html
         onParallel.counter += 1;
         local.buildApidoc({
@@ -12557,10 +12593,11 @@ return Utf8ArrayToStr(bff);
         }, onParallel);
         break;
     case &#x27;npmtest&#x27;:
-        // update package.json
-        local.objectSetOverride(options.packageJson, local.objectLiteralize({
-            keywords: [&#x27;coverage&#x27;, &#x27;test&#x27;, local.env.npm_package_buildCustomOrg]
-        }), 2);
+        local.objectSetOverride(options, {
+            packageJson: {
+                keywords: [&#x27;coverage&#x27;, &#x27;test&#x27;, local.env.npm_package_buildCustomOrg]
+            }
+        }, 2);
         break;
     }
     // build README.md
@@ -12568,6 +12605,7 @@ return Utf8ArrayToStr(bff);
         dir: local.env.npm_package_buildCustomOrg,
         modeNoApidoc: true,
         modulePathList: options.modulePathList,
+        require: local.requireInSandbox,
         template: local.assetsDict[&#x27;/assets.readmeCustomOrg.&#x27; + local.env.GITHUB_ORG +
             &#x27;.template.md&#x27;]
     });
@@ -12704,7 +12742,7 @@ return Utf8ArrayToStr(bff);
         (/\n```javascript\n\/\*\nexample\.js\n\n[^`]*?\n/),
         (/\n {8}\$ npm install [^`]*? &#x26;&#x26;/),
         (/\n {12}: global;\n[^`]*?\n {8}local\.global\.local = local;\n/),
-        (/\n {8}local\.global\.local = local;\n[^`]*?\n {4}\/\/ post-init\n/),
+        (/\n {8}local\.global\.local = local;\n[^`]*?\n {4}\/\/ init-after\n/),
         new RegExp(&#x27;\\n {8}local\\.testRunBrowser = function \\(event\\) \\{\\n&#x27; +
             &#x27;[^`]*?^ {12}if \\(!event \\|\\| \\(event &#x26;&#x26;\\n&#x27;, &#x27;m&#x27;),
         (/\n {12}\/\/ custom-case\n[^`]*?\n {12}\}\n/),
@@ -12714,8 +12752,8 @@ return Utf8ArrayToStr(bff);
         (/\nutility2-comment --&#x3e;(?:\\n\\\n){4}[^`]*?^&#x3c;!-- utility2-comment\\n\\\n/m),
         // customize build-script
         (/\n# internal build-script\n[\S\s]*?^- build_ci\.sh\n/m),
-        (/\nshBuildCiPost\(\) \{\(set -e\n[^`]*?\n\)\}\n/),
-        (/\nshBuildCiPre\(\) \{\(set -e\n[^`]*?\n\)\}\n/)
+        (/\nshBuildCiAfter\(\) \{\(set -e\n[^`]*?\n\)\}\n/),
+        (/\nshBuildCiBefore\(\) \{\(set -e\n[^`]*?\n\)\}\n/)
     ].forEach(function (rgx) {
         // handle large string-replace
         options.dataFrom.replace(rgx, function (match0) {
@@ -12766,15 +12804,15 @@ return Utf8ArrayToStr(bff);
     // search-and-replace - customize dataTo
     [
         // customize js\-env code
-        new RegExp(&#x27;\\n {4}\\/\\/ run shared js\\-env code - pre-init\\n[\\S\\s]*?&#x27; +
+        new RegExp(&#x27;\\n {4}\\/\\/ run shared js\\-env code - init-before\\n[\\S\\s]*?&#x27; +
             &#x27;^ {4}\\(function \\(\\) \\{\\n&#x27;, &#x27;m&#x27;),
         (/\n {8}local.global.local = local;\n[\S\s]*?^ {4}\}\(\)\);\n/m),
         (/\n {4}\/\/ run shared js\-env code - function\n[\S\s]*?\n {4}\}\(\)\);\n/),
         (/\n {4}\/\/ run browser js\-env code - function\n[\S\s]*?\n {8}break;\n/),
         (/\n {4}\/\/ run node js\-env code - function\n[\S\s]*?\n {8}break;\n/),
-        new RegExp(&#x27;\\n {4}\\/\\/ run browser js\\-env code - post-init\\n[\\S\\s]*?&#x27; +
+        new RegExp(&#x27;\\n {4}\\/\\/ run browser js\\-env code - init-after\\n[\\S\\s]*?&#x27; +
             &#x27;^ {4}case \&#x27;browser\&#x27;:\n&#x27;, &#x27;m&#x27;),
-        (/\n {4}\/\/ run shared js\-env code - post-init\n[\S\s]*?\n {4}\}\(\)\);\n/)
+        (/\n {4}\/\/ run shared js\-env code - init-after\n[\S\s]*?\n {4}\}\(\)\);\n/)
     ].forEach(function (rgx) {
         // handle large string-replace
         options.dataFrom.replace(rgx, function (match0) {
@@ -13084,7 +13122,7 @@ return Utf8ArrayToStr(bff);
         headers: {
             // github oauth authentication
             Authorization: &#x27;token &#x27; + process.env.GITHUB_TOKEN,
-            // bug-workaround - github api requires user-agent header
+            // bug-workaround - https://developer.github.com/v3/#user-agent-required
             &#x27;User-Agent&#x27;: &#x27;undefined&#x27;
         },
         message: options.message,
@@ -14229,19 +14267,19 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
 
 
     <h2>
-        <a href="#apidoc.element.global.utility2.dbTableTravisOrgCreate" id="apidoc.element.global.utility2.dbTableTravisOrgCreate">
-        function <span class="apidocSignatureSpan">global.utility2.</span>dbTableTravisOrgCreate
+        <a href="#apidoc.element.global.utility2.dbTableCustomOrgCreate" id="apidoc.element.global.utility2.dbTableCustomOrgCreate">
+        function <span class="apidocSignatureSpan">global.utility2.</span>dbTableCustomOrgCreate
         <span class="apidocSignatureSpan">(options, onError)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">dbTableTravisOrgCreate = function (options, onError) {
+    <li>description and source-code<pre class="apidocCodePre">dbTableCustomOrgCreate = function (options, onError) {
 <span class="apidocCodeCommentSpan">/*
- * this function will create a persistent dbTableTravisOrg
+ * this function will create a persistent dbTableCustomOrg
  */
-</span>    options = local.objectSetDefault(options, { githubOrg: local.env.GITHUB_ORG });
+</span>    options = local.objectSetDefault(options, { customOrg: local.env.GITHUB_ORG });
     options = local.objectSetDefault(options, {
-        name: &#x27;TravisOrg.&#x27; + options.githubOrg,
+        name: &#x27;CustomOrg.&#x27; + options.customOrg,
         sizeLimit: 1000,
         sortDefault: [{
             fieldName: &#x27;_id&#x27;
@@ -14253,8 +14291,8 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
             fieldName: &#x27;active&#x27;
         }]
     });
-    local.dbTableTravisOrg = local.db.dbTableCreateOne(options, onError);
-    return local.dbTableTravisOrg;
+    local.dbTableCustomOrg = local.db.dbTableCreateOne(options, onError);
+    return local.dbTableCustomOrg;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14262,26 +14300,51 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
 
 
     <h2>
-        <a href="#apidoc.element.global.utility2.dbTableTravisOrgUpdate" id="apidoc.element.global.utility2.dbTableTravisOrgUpdate">
-        function <span class="apidocSignatureSpan">global.utility2.</span>dbTableTravisOrgUpdate
+        <a href="#apidoc.element.global.utility2.dbTableCustomOrgCrudGetManyByQuery" id="apidoc.element.global.utility2.dbTableCustomOrgCrudGetManyByQuery">
+        function <span class="apidocSignatureSpan">global.utility2.</span>dbTableCustomOrgCrudGetManyByQuery
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dbTableCustomOrgCrudGetManyByQuery = function (options) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will query dbTableCustomOrg
+ */
+</span>    options = local.objectSetDefault(options, { customOrg: local.env.GITHUB_ORG });
+    options = local.objectSetDefault(options, {
+        query: { buildStartedAt: { $not: { $gt: new Date(Date.now() - (
+            Number(options.olderThanLast) || 0
+        )).toISOString() } } }
+    }, 2);
+    console.error(&#x27;dbTableCustomOrgCrudGetManyByQuery - &#x27; + JSON.stringify(options));
+    return local.dbTableCustomOrg.crudGetManyByQuery(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.global.utility2.dbTableCustomOrgUpdate" id="apidoc.element.global.utility2.dbTableCustomOrgUpdate">
+        function <span class="apidocSignatureSpan">global.utility2.</span>dbTableCustomOrgUpdate
         <span class="apidocSignatureSpan">(options, onError)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">dbTableTravisOrgUpdate = function (options, onError) {
+    <li>description and source-code<pre class="apidocCodePre">dbTableCustomOrgUpdate = function (options, onError) {
 <span class="apidocCodeCommentSpan">/*
- * this function will update dbTableTravisOrg with active, public repos
+ * this function will update dbTableCustomOrg with active, public repos
  */
 </span>    var count, dbRowList, self;
-    options = local.objectSetDefault(options, { githubOrg: local.env.GITHUB_ORG });
+    options = local.objectSetDefault(options, { customOrg: local.env.GITHUB_ORG });
     local.onNext(options, function (error, data) {
         switch (options.modeNext) {
         case 1:
-            self = local.dbTableTravisOrg =
-                local.dbTableTravisOrgCreate(options, options.onNext);
+            self = local.dbTableCustomOrg =
+                local.dbTableCustomOrgCreate(options, options.onNext);
             break;
         case 2:
-            self = local.dbTableTravisOrg = data;
+            self = local.dbTableCustomOrg = data;
             data = {
                 headers: {
                     &#x27;Travis-API-Version&#x27;: &#x27;3&#x27;,
@@ -14366,7 +14429,7 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
             self.crudSetManyById(dbRowList
                 .filter(function (dbRow) {
                     return dbRow.private === false &#x26;&#x26; dbRow.slug.indexOf(
-                        options.githubOrg + &#x27;/node-&#x27; + options.githubOrg + &#x27;-&#x27;
+                        options.customOrg + &#x27;/node-&#x27; + options.customOrg + &#x27;-&#x27;
                     ) === 0;
                 })
                 .map(function (dbRow) {
@@ -14428,9 +14491,9 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
 <span class="apidocCodeCommentSpan">/*
  * this function will try to determine if the env-key is sensitive
  */
-</span>    return (/(?:\b|_)(?:decrypt|key|pass|private|secret|token)/)
+</span>    return (/(?:\b|_)(?:crypt|decrypt|key|pass|private|secret|token)/)
         .test(key.toLowerCase()) ||
-        (/Decrypt|Key|Pass|Private|Secret|Token/).test(key);
+        (/Crypt|Decrypt|Key|Pass|Private|Secret|Token/).test(key);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -14672,13 +14735,13 @@ t.length&#x3e;0?&#x22;(&#x22;+p(MAP(t,function(e){return d(e,&#x22;seq&#x22;)}))
 <span class="apidocCodeCommentSpan">/*
  * this function will request the data from options.url
  */
-</span>    var chunkList, done, onError2, timerTimeout, request, response, urlParsed;
+</span>    var chunkList, isDone, onError2, timerTimeout, request, response, urlParsed;
     // init onError2
     onError2 = function (error) {
-        if (done) {
+        if (isDone) {
             return;
         }
-        done = true;
+        isDone = true;
         // cleanup timerTimeout
         clearTimeout(timerTimeout);
         // cleanup request and response
@@ -15851,10 +15914,10 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
     // init onError
     onError = function (error) {
         clearTimeout(timerTimeout);
-        if (!error || options.done) {
+        if (!error || options.isDone) {
             return;
         }
-        options.done = true;
+        options.isDone = true;
         // cleanup client
         local.streamListCleanup([options.clientRequest, options.clientResponse]);
         nextMiddleware(error);
@@ -16281,17 +16344,12 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
     if (!module || module === &#x27;.&#x27; || module.indexOf(&#x27;/&#x27;) &#x3e;= 0) {
         return require(&#x27;path&#x27;).resolve(process.cwd(), module || &#x27;&#x27;);
     }
-    // search builtin
-    if (Object.keys(process.binding(&#x27;natives&#x27;)).indexOf(module) &#x3e;= 0) {
-        return module;
-    }
     // search modulePathList
-    [
-        [&#x27;node_modules&#x27;],
-        modulePathList,
-        require(&#x27;module&#x27;).globalPaths
-    ].some(function (modulePathList) {
-        modulePathList.some(function (modulePath) {
+    [&#x27;node_modules&#x27;]
+        .concat(modulePathList)
+        .concat(require(&#x27;module&#x27;).globalPaths)
+        .concat([process.env.HOME + &#x27;/node_modules&#x27;, &#x27;/usr/local/lib/node_modules&#x27;])
+        .some(function (modulePath) {
             try {
                 tmp = require(&#x27;path&#x27;).resolve(process.cwd(), modulePath + &#x27;/&#x27; + module);
                 result = require(&#x27;fs&#x27;).statSync(tmp).isDirectory() &#x26;&#x26; tmp;
@@ -16299,8 +16357,6 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
             } catch (ignore) {
             }
         });
-        return result;
-    });
     return result || &#x27;&#x27;;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -16911,7 +16967,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
             // ensure counter &#x3c;= 0
             onParallel.counter = -Math.abs(onParallel.counter);
         }
-        // call onError when done
+        // call onError when isDone
         if (onParallel.counter &#x3c;= 0) {
             onError(error, data);
             return;
@@ -16940,7 +16996,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
  * this function will
  * 1. async-run onEach in parallel,
  *    with the given options.rateLimit and options.retryLimit
- * 2. call onError when done
+ * 2. call onError when isDone
  */
 </span>    var ii, onEach2, onParallel;
     onEach2 = function () {
@@ -17028,7 +17084,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
         // ensure counter &#x3c;= 0
         onParallel.counter = -Math.abs(onParallel.counter);
     }
-    // call onError when done
+    // call onError when isDone
     if (onParallel.counter &#x3c;= 0) {
         onError(error, data);
         return;
@@ -17088,7 +17144,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
         // ensure counter &#x3c;= 0
         onParallel.counter = -Math.abs(onParallel.counter);
     }
-    // call onError when done
+    // call onError when isDone
     if (onParallel.counter &#x3c;= 0) {
         onError(error, data);
         return;
@@ -17351,7 +17407,7 @@ W(U(!0),u,n);return W(v(&#x22;binary&#x22;,s,e,a),t,n)}return e}function X(e){re
                 [&#x27;-c&#x27;, &#x27;find . -type f | grep -v &#x27; +
 /* jslint-ignore-begin */
 &#x27;&#x22;\
-/\\.\\|.*\\(\\b\\|_\\)\\(\\.\\d\\|\
+/\\.\\|\\(\\b\\|_\\)\\(\\.\\d\\|\
 archive\\|artifact\\|\
 bower_component\\|build\\|\
 coverage\\|\
@@ -17366,7 +17422,7 @@ node_module\\|\
 rollup\\|\
 swp\\|\
 tmp\\|\
-vendor\\)\\(\\b\\|[_s]\\)\
+vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
 &#x22; &#x27; +
 /* jslint-ignore-end */
                     &#x27;| tr &#x22;\\n&#x22; &#x22;\\000&#x22; | xargs -0 grep -in &#x22;&#x27; +
@@ -17404,7 +17460,7 @@ vendor\\)\\(\\b\\|[_s]\\)\
     // init process.stdout
     process.stdout._writeDefault = process.stdout._writeDefault ||
         process.stdout._write;
-    process.stdout._write = function (chunk, encodin ...</pre></li>
+    process.stdout._write = function (chunk, en ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -17431,13 +17487,72 @@ vendor\\)\\(\\b\\|[_s]\\)\
 
 
     <h2>
-        <a href="#apidoc.element.global.utility2.requireExampleJsFromReadme" id="apidoc.element.global.utility2.requireExampleJsFromReadme">
-        function <span class="apidocSignatureSpan">global.utility2.</span>requireExampleJsFromReadme
+        <a href="#apidoc.element.global.utility2.requireInSandbox" id="apidoc.element.global.utility2.requireInSandbox">
+        function <span class="apidocSignatureSpan">global.utility2.</span>requireInSandbox
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requireInSandbox = function (file) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will require the file in a sandbox-lite env
+ */
+</span>    var exports, mockDict, mockList, tmp;
+    mockList = [
+        [ local.global, {
+            setImmediate: local.nop,
+            setInterval: local.nop,
+            setTimeout: local.nop
+        }]
+    ];
+    [
+        [local, &#x27;child_process&#x27;],
+        [local, &#x27;cluster&#x27;],
+        [local, &#x27;http&#x27;],
+        [local, &#x27;https&#x27;],
+        [local, &#x27;net&#x27;],
+        [local, &#x27;repl&#x27;],
+        [local.events, &#x27;prototype&#x27;],
+        [local.global, &#x27;process&#x27;],
+        [local.stream, &#x27;prototype&#x27;],
+        [process, &#x27;stdin&#x27;]
+    ].forEach(function (element) {
+        tmp = element[0][element[1]];
+        mockDict = {};
+        Object.keys(tmp).forEach(function (key) {
+            if (typeof tmp[key] === &#x27;function&#x27; &#x26;&#x26; !(
+                    /^(?:fs\.Read|fs\.read|process\.binding|process\.dlopen)/
+                ).test(element[1] + &#x27;.&#x27; + key)) {
+                mockDict[key] = function () {
+                    return;
+                };
+                // coverage-hack
+                mockDict[key]();
+            }
+        });
+        mockList.push([ tmp, mockDict ]);
+    });
+    local.testMock(mockList, function (onError) {
+        local.tryCatchOnError(function () {
+            exports = require(file);
+        }, console.error);
+        onError();
+    }, local.onErrorThrow);
+    return exports;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.global.utility2.requireReadme" id="apidoc.element.global.utility2.requireReadme">
+        function <span class="apidocSignatureSpan">global.utility2.</span>requireReadme
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">requireExampleJsFromReadme = function () {
+    <li>description and source-code<pre class="apidocCodePre">requireReadme = function () {
 <span class="apidocCodeCommentSpan">/*
  * this function will require and export example.js embedded in README.md
  */
@@ -18023,7 +18138,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
 <span class="apidocCodeCommentSpan">/*
  * this function will defer options.action until storage is ready
  */
-</span>    var data, done, objectStore, onError2, request, tmp;
+</span>    var data, isDone, objectStore, onError2, request, tmp;
     onError = onError || function (error) {
         // validate no error occurred
         console.assert(!error, error);
@@ -18039,10 +18154,10 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     case &#x27;browser&#x27;:
         onError2 = function () {
             /* istanbul ignore next */
-            if (done) {
+            if (isDone) {
                 return;
             }
-            done = true;
+            isDone = true;
             onError(
                 request &#x26;&#x26; (request.error || request.transaction.error),
                 data || request.result || &#x27;&#x27;
@@ -18346,7 +18461,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     <li>description and source-code<pre class="apidocCodePre">streamReadAll = function (stream, onError) {
 <span class="apidocCodeCommentSpan">/*
  * this function will concat data from the stream,
- * and pass it to onError when done reading
+ * and pass it to onError when isDone reading
  */
 </span>    var chunkList;
     chunkList = [];
@@ -18417,11 +18532,11 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
         return task;
     }
     task.onDone = function () {
-        // if already done, then do nothing
-        if (task.done) {
+        // if isDone, then do nothing
+        if (task.isDone) {
             return;
         }
-        task.done = true;
+        task.isDone = true;
         // cleanup timerTimeout
         clearTimeout(task.timerTimeout);
         // cleanup task
@@ -18747,7 +18862,8 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
 <span class="apidocCodeCommentSpan">/*
  * this function will create test-report artifacts
  */
-</span>    // print test-report summary
+</span>    testReport = local.objectSetDefault(testReport, { testPlatformList: [] });
+    // print test-report summary
     console.error(&#x27;\n&#x27; + new Array(56).join(&#x27;-&#x27;) + &#x27;\n&#x27; + testReport.testPlatformList
         .filter(function (testPlatform) {
             // if testPlatform has no tests, then filter it out
@@ -18799,8 +18915,11 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     // if any test failed, then exit with non-zero exit-code
     console.error(&#x27;\n&#x27; + local.env.MODE_BUILD +
         &#x27; - &#x27; + testReport.testsFailed + &#x27; failed tests\n&#x27;);
-    // exit with number of tests failed
-    local.exit(testReport.testsFailed);
+    // print test-report detail
+    if (testReport.testsFailed) {
+        console.error(&#x27;\n&#x27; + JSON.stringify(testReport, null, 4) + &#x27;\n&#x27;);
+    }
+    return testReport;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -18983,7 +19102,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
             });
         }
     });
-    // visual notification - update test-progress until done
+    // visual notification - update test-progress until isDone
     // init testReportDiv1 element
     if (local.modeJs === &#x27;browser&#x27;) {
         testReportDiv1 = document.querySelector(&#x27;#testReportDiv1&#x27;);
@@ -18991,7 +19110,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     testReportDiv1 = testReportDiv1 || { style: {} };
     testReportDiv1.style.display = &#x27;block&#x27;;
     testReportDiv1.innerHTML = local.testReportMerge(testReport, {});
-    // update test-report status every 1000 ms until done
+    // update test-report status every 1000 ms until isDone
     timerInterval = setInterval(function () {
         // update testReportDiv1 in browser
         testReportDiv1.innerHTML = local.testReportMerge(testReport, {});
@@ -19010,8 +19129,8 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
         onError = function (error) {
             // cleanup timerTimeout
             clearTimeout(timerTimeout);
-            // if testCase already done, then fail testCase with error for ending again
-            if (testCase.done) {
+            // if testCase isDone, then fail testCase with error for ending again
+            if (testCase.isDone) {
                 error = error || new Error(&#x27;callback in testCase &#x27; +
                     testCase.name + &#x27; called multiple times&#x27;);
             }
@@ -19028,7 +19147,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
                     &#x27;invalid errorStack &#x27; + testCase.errorStack
                 );
             }
-            // if already done, then do nothing ...</pre></li>
+            // if tests isDone, then do nothing ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -23259,7 +23378,7 @@ maxCols&#x3e;0&#x26;&#x26;(o=this.maxCols-s-2,i&#x3e;o&#x26;&#x26;(i=o)),walk(r,
 <span class="apidocCodeCommentSpan">/*
  * this function will handle the error and data passed back to the xhr-connection
  */
-</span>    if (this.done) {
+</span>    if (this.isDone) {
         return;
     }
     this.error = error;
@@ -24691,10 +24810,10 @@ watermarks||defaults.watermarks()}</pre></li>
         case &#x27;error&#x27;:
         case &#x27;load&#x27;:
             // do not run more than once
-            if (xhr.done) {
+            if (xhr.isDone) {
                 return;
             }
-            xhr.done = true;
+            xhr.isDone = true;
             // cleanup timerTimeout
             clearTimeout(timerTimeout);
             // cleanup requestStream and responseStream
@@ -24751,7 +24870,7 @@ watermarks||defaults.watermarks()}</pre></li>
     xhr.addEventListener(&#x27;load&#x27;, xhr.onEvent);
     xhr.addEventListener(&#x27;loadstart&#x27;, local.ajaxProgressUpdate);
     xhr.addEventListener(&#x27;progress&#x27;, local.ajaxProgressUpdate);
-    xhr.upload.addEventListener(&#x27;progress&#x27;, local.a ...</pre></li>
+    xhr.upload.addEventListener(&#x27;progress&#x27;, loc ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -25097,7 +25216,7 @@ watermarks||defaults.watermarks()}</pre></li>
             }
             Object.keys(moduleDict[prefix]).forEach(function (key) {
                 // bug-workaround - buggy electron getter / setter
-                try {
+                local.tryCatchOnError(function () {
                     if (!(/^\w[\w\-.]*?$/).test(key) || !moduleDict[prefix][key]) {
                         return;
                     }
@@ -25123,10 +25242,9 @@ watermarks||defaults.watermarks()}</pre></li>
                     ].some(function (dict) {
                         return Object.keys(dict || {}).some(function (key) {
                             // bug-workaround - buggy electron getter / setter
-                            try {
+                            return local.tryCatchOnError(function () {
                                 return typeof dict[key] === &#x27;function&#x27;;
-                            } catch (ignore) {
-                            }
+                            }, console.error);
                         });
                     });
                     if (!isModule) {
@@ -25134,8 +25252,7 @@ watermarks||defaults.watermarks()}</pre></li>
                     }
                     options.circularList.push(tmp.module);
                     options.moduleDict[tmp.name] = tmp.module;
-                } catch (ignore) {
-                }
+                }, console.error);
             });
         });
     });
@@ -25545,7 +25662,7 @@ e){return[this[0],e]}},r={},i=[];return{walk:s,dive:o,with_walkers:u,parent:func
  * - dataURL
  * - text
  */
-</span>    var data, done, reader;
+</span>    var data, isDone, reader;
     if (local.modeJs === &#x27;node&#x27;) {
         switch (encoding) {
         // readAsDataURL
@@ -25566,10 +25683,10 @@ e){return[this[0],e]}},r={},i=[];return{walk:s,dive:o,with_walkers:u,parent:func
     }
     reader = new local.global.FileReader();
     reader.onabort = reader.onerror = reader.onload = function (event) {
-        if (done) {
+        if (isDone) {
             return;
         }
-        done = true;
+        isDone = true;
         switch (event.type) {
         case &#x27;abort&#x27;:
         case &#x27;error&#x27;:
@@ -25613,7 +25730,7 @@ e){return[this[0],e]}},r={},i=[];return{walk:s,dive:o,with_walkers:u,parent:func
 <span class="apidocCodeCommentSpan">/*
  * this function will spawn an electron process to test options.url
  */
-</span>    var done, modeNext, onNext, onParallel, timerTimeout;
+</span>    var isDone, modeNext, onNext, onParallel, timerTimeout;
     if (typeof local === &#x27;object&#x27; &#x26;&#x26; local &#x26;&#x26; local.modeJs === &#x27;node&#x27;) {
         local.objectSetDefault(options, local.envSanitize(local.env));
         options.timeoutDefault = options.timeoutDefault || local.timeoutDefault;
@@ -25937,7 +26054,10 @@ return Utf8ArrayToStr(bff);
         onError();
         return;
     }
-    local.objectSetDefault(options, { blacklistDict: local });
+    local.objectSetDefault(options, {
+        blacklistDict: local,
+        require: local.requireInSandbox
+    });
     // create apidoc.html
     local.fsWriteFileWithMkdirpSync(
         local.env.npm_config_dir_build + &#x27;/apidoc.html&#x27;,
@@ -26020,7 +26140,7 @@ return Utf8ArrayToStr(bff);
         );
         // test standalone assets.app.js
         local.fs.writeFileSync(&#x27;tmp/assets.app.js&#x27;, local.assetsDict[&#x27;/assets.app.js&#x27;]);
-        local.processSpawnWithTimeout(process.argv[0], [&#x27;assets.app.js&#x27;], {
+        local.processSpawnWithTimeout(&#x27;node&#x27;, [&#x27;assets.app.js&#x27;], {
             cwd: &#x27;tmp&#x27;,
             env: {
                 PORT: (Math.random() * 0x10000) | 0x8000,
@@ -26052,19 +26172,17 @@ return Utf8ArrayToStr(bff);
 <span class="apidocCodeCommentSpan">/*
  * this function will build the customOrg
  */
-</span>    var done, onError2, onParallel;
+</span>    var isDone, onError2, onParallel;
     if (!local.env.npm_package_buildCustomOrg &#x26;&#x26; !options.modeForce) {
         onError();
         return;
     }
-    // ensure exit after 5 minutes
-    setTimeout(process.exit, 5 * 60 * 1000);
     onError2 = function (error) {
         local.onErrorDefault(error);
-        if (done) {
+        if (isDone) {
             return;
         }
-        done = true;
+        isDone = true;
         // try to recover from error
         setTimeout(onError, error &#x26;&#x26; local.timeoutDefault);
     };
@@ -26083,10 +26201,11 @@ return Utf8ArrayToStr(bff);
     options.packageJson = JSON.parse(local.fs.readFileSync(&#x27;package.json&#x27;, &#x27;utf8&#x27;));
     switch (local.env.GITHUB_ORG) {
     case &#x27;npmdoc&#x27;:
-        // update package.json
-        local.objectSetOverride(options.packageJson, local.objectLiteralize({
-            keywords: [&#x27;documentation&#x27;, local.env.npm_package_buildCustomOrg]
-        }), 2);
+        local.objectSetOverride(options, {
+            packageJson: {
+                keywords: [&#x27;documentation&#x27;, local.env.npm_package_buildCustomOrg]
+            }
+        }, 2);
         // build apidoc.html
         onParallel.counter += 1;
         local.buildApidoc({
@@ -26096,10 +26215,11 @@ return Utf8ArrayToStr(bff);
         }, onParallel);
         break;
     case &#x27;npmtest&#x27;:
-        // update package.json
-        local.objectSetOverride(options.packageJson, local.objectLiteralize({
-            keywords: [&#x27;coverage&#x27;, &#x27;test&#x27;, local.env.npm_package_buildCustomOrg]
-        }), 2);
+        local.objectSetOverride(options, {
+            packageJson: {
+                keywords: [&#x27;coverage&#x27;, &#x27;test&#x27;, local.env.npm_package_buildCustomOrg]
+            }
+        }, 2);
         break;
     }
     // build README.md
@@ -26107,6 +26227,7 @@ return Utf8ArrayToStr(bff);
         dir: local.env.npm_package_buildCustomOrg,
         modeNoApidoc: true,
         modulePathList: options.modulePathList,
+        require: local.requireInSandbox,
         template: local.assetsDict[&#x27;/assets.readmeCustomOrg.&#x27; + local.env.GITHUB_ORG +
             &#x27;.template.md&#x27;]
     });
@@ -26243,7 +26364,7 @@ return Utf8ArrayToStr(bff);
         (/\n```javascript\n\/\*\nexample\.js\n\n[^`]*?\n/),
         (/\n {8}\$ npm install [^`]*? &#x26;&#x26;/),
         (/\n {12}: global;\n[^`]*?\n {8}local\.global\.local = local;\n/),
-        (/\n {8}local\.global\.local = local;\n[^`]*?\n {4}\/\/ post-init\n/),
+        (/\n {8}local\.global\.local = local;\n[^`]*?\n {4}\/\/ init-after\n/),
         new RegExp(&#x27;\\n {8}local\\.testRunBrowser = function \\(event\\) \\{\\n&#x27; +
             &#x27;[^`]*?^ {12}if \\(!event \\|\\| \\(event &#x26;&#x26;\\n&#x27;, &#x27;m&#x27;),
         (/\n {12}\/\/ custom-case\n[^`]*?\n {12}\}\n/),
@@ -26253,8 +26374,8 @@ return Utf8ArrayToStr(bff);
         (/\nutility2-comment --&#x3e;(?:\\n\\\n){4}[^`]*?^&#x3c;!-- utility2-comment\\n\\\n/m),
         // customize build-script
         (/\n# internal build-script\n[\S\s]*?^- build_ci\.sh\n/m),
-        (/\nshBuildCiPost\(\) \{\(set -e\n[^`]*?\n\)\}\n/),
-        (/\nshBuildCiPre\(\) \{\(set -e\n[^`]*?\n\)\}\n/)
+        (/\nshBuildCiAfter\(\) \{\(set -e\n[^`]*?\n\)\}\n/),
+        (/\nshBuildCiBefore\(\) \{\(set -e\n[^`]*?\n\)\}\n/)
     ].forEach(function (rgx) {
         // handle large string-replace
         options.dataFrom.replace(rgx, function (match0) {
@@ -26305,15 +26426,15 @@ return Utf8ArrayToStr(bff);
     // search-and-replace - customize dataTo
     [
         // customize js\-env code
-        new RegExp(&#x27;\\n {4}\\/\\/ run shared js\\-env code - pre-init\\n[\\S\\s]*?&#x27; +
+        new RegExp(&#x27;\\n {4}\\/\\/ run shared js\\-env code - init-before\\n[\\S\\s]*?&#x27; +
             &#x27;^ {4}\\(function \\(\\) \\{\\n&#x27;, &#x27;m&#x27;),
         (/\n {8}local.global.local = local;\n[\S\s]*?^ {4}\}\(\)\);\n/m),
         (/\n {4}\/\/ run shared js\-env code - function\n[\S\s]*?\n {4}\}\(\)\);\n/),
         (/\n {4}\/\/ run browser js\-env code - function\n[\S\s]*?\n {8}break;\n/),
         (/\n {4}\/\/ run node js\-env code - function\n[\S\s]*?\n {8}break;\n/),
-        new RegExp(&#x27;\\n {4}\\/\\/ run browser js\\-env code - post-init\\n[\\S\\s]*?&#x27; +
+        new RegExp(&#x27;\\n {4}\\/\\/ run browser js\\-env code - init-after\\n[\\S\\s]*?&#x27; +
             &#x27;^ {4}case \&#x27;browser\&#x27;:\n&#x27;, &#x27;m&#x27;),
-        (/\n {4}\/\/ run shared js\-env code - post-init\n[\S\s]*?\n {4}\}\(\)\);\n/)
+        (/\n {4}\/\/ run shared js\-env code - init-after\n[\S\s]*?\n {4}\}\(\)\);\n/)
     ].forEach(function (rgx) {
         // handle large string-replace
         options.dataFrom.replace(rgx, function (match0) {
@@ -26623,7 +26744,7 @@ return Utf8ArrayToStr(bff);
         headers: {
             // github oauth authentication
             Authorization: &#x27;token &#x27; + process.env.GITHUB_TOKEN,
-            // bug-workaround - github api requires user-agent header
+            // bug-workaround - https://developer.github.com/v3/#user-agent-required
             &#x27;User-Agent&#x27;: &#x27;undefined&#x27;
         },
         message: options.message,
@@ -27768,19 +27889,19 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
 
 
     <h2>
-        <a href="#apidoc.element.global.utility2.swgg.dbTableTravisOrgCreate" id="apidoc.element.global.utility2.swgg.dbTableTravisOrgCreate">
-        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableTravisOrgCreate
+        <a href="#apidoc.element.global.utility2.swgg.dbTableCustomOrgCreate" id="apidoc.element.global.utility2.swgg.dbTableCustomOrgCreate">
+        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableCustomOrgCreate
         <span class="apidocSignatureSpan">(options, onError)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">dbTableTravisOrgCreate = function (options, onError) {
+    <li>description and source-code<pre class="apidocCodePre">dbTableCustomOrgCreate = function (options, onError) {
 <span class="apidocCodeCommentSpan">/*
- * this function will create a persistent dbTableTravisOrg
+ * this function will create a persistent dbTableCustomOrg
  */
-</span>    options = local.objectSetDefault(options, { githubOrg: local.env.GITHUB_ORG });
+</span>    options = local.objectSetDefault(options, { customOrg: local.env.GITHUB_ORG });
     options = local.objectSetDefault(options, {
-        name: &#x27;TravisOrg.&#x27; + options.githubOrg,
+        name: &#x27;CustomOrg.&#x27; + options.customOrg,
         sizeLimit: 1000,
         sortDefault: [{
             fieldName: &#x27;_id&#x27;
@@ -27792,8 +27913,8 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
             fieldName: &#x27;active&#x27;
         }]
     });
-    local.dbTableTravisOrg = local.db.dbTableCreateOne(options, onError);
-    return local.dbTableTravisOrg;
+    local.dbTableCustomOrg = local.db.dbTableCreateOne(options, onError);
+    return local.dbTableCustomOrg;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -27801,26 +27922,51 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
 
 
     <h2>
-        <a href="#apidoc.element.global.utility2.swgg.dbTableTravisOrgUpdate" id="apidoc.element.global.utility2.swgg.dbTableTravisOrgUpdate">
-        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableTravisOrgUpdate
+        <a href="#apidoc.element.global.utility2.swgg.dbTableCustomOrgCrudGetManyByQuery" id="apidoc.element.global.utility2.swgg.dbTableCustomOrgCrudGetManyByQuery">
+        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableCustomOrgCrudGetManyByQuery
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dbTableCustomOrgCrudGetManyByQuery = function (options) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will query dbTableCustomOrg
+ */
+</span>    options = local.objectSetDefault(options, { customOrg: local.env.GITHUB_ORG });
+    options = local.objectSetDefault(options, {
+        query: { buildStartedAt: { $not: { $gt: new Date(Date.now() - (
+            Number(options.olderThanLast) || 0
+        )).toISOString() } } }
+    }, 2);
+    console.error(&#x27;dbTableCustomOrgCrudGetManyByQuery - &#x27; + JSON.stringify(options));
+    return local.dbTableCustomOrg.crudGetManyByQuery(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.global.utility2.swgg.dbTableCustomOrgUpdate" id="apidoc.element.global.utility2.swgg.dbTableCustomOrgUpdate">
+        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>dbTableCustomOrgUpdate
         <span class="apidocSignatureSpan">(options, onError)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">dbTableTravisOrgUpdate = function (options, onError) {
+    <li>description and source-code<pre class="apidocCodePre">dbTableCustomOrgUpdate = function (options, onError) {
 <span class="apidocCodeCommentSpan">/*
- * this function will update dbTableTravisOrg with active, public repos
+ * this function will update dbTableCustomOrg with active, public repos
  */
 </span>    var count, dbRowList, self;
-    options = local.objectSetDefault(options, { githubOrg: local.env.GITHUB_ORG });
+    options = local.objectSetDefault(options, { customOrg: local.env.GITHUB_ORG });
     local.onNext(options, function (error, data) {
         switch (options.modeNext) {
         case 1:
-            self = local.dbTableTravisOrg =
-                local.dbTableTravisOrgCreate(options, options.onNext);
+            self = local.dbTableCustomOrg =
+                local.dbTableCustomOrgCreate(options, options.onNext);
             break;
         case 2:
-            self = local.dbTableTravisOrg = data;
+            self = local.dbTableCustomOrg = data;
             data = {
                 headers: {
                     &#x27;Travis-API-Version&#x27;: &#x27;3&#x27;,
@@ -27905,7 +28051,7 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
             self.crudSetManyById(dbRowList
                 .filter(function (dbRow) {
                     return dbRow.private === false &#x26;&#x26; dbRow.slug.indexOf(
-                        options.githubOrg + &#x27;/node-&#x27; + options.githubOrg + &#x27;-&#x27;
+                        options.customOrg + &#x27;/node-&#x27; + options.customOrg + &#x27;-&#x27;
                     ) === 0;
                 })
                 .map(function (dbRow) {
@@ -27967,9 +28113,9 @@ slice(arguments,1);return function(){return e.apply(this,t.concat(slice(argument
 <span class="apidocCodeCommentSpan">/*
  * this function will try to determine if the env-key is sensitive
  */
-</span>    return (/(?:\b|_)(?:decrypt|key|pass|private|secret|token)/)
+</span>    return (/(?:\b|_)(?:crypt|decrypt|key|pass|private|secret|token)/)
         .test(key.toLowerCase()) ||
-        (/Decrypt|Key|Pass|Private|Secret|Token/).test(key);
+        (/Crypt|Decrypt|Key|Pass|Private|Secret|Token/).test(key);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -28211,13 +28357,13 @@ t.length&#x3e;0?&#x22;(&#x22;+p(MAP(t,function(e){return d(e,&#x22;seq&#x22;)}))
 <span class="apidocCodeCommentSpan">/*
  * this function will request the data from options.url
  */
-</span>    var chunkList, done, onError2, timerTimeout, request, response, urlParsed;
+</span>    var chunkList, isDone, onError2, timerTimeout, request, response, urlParsed;
     // init onError2
     onError2 = function (error) {
-        if (done) {
+        if (isDone) {
             return;
         }
-        done = true;
+        isDone = true;
         // cleanup timerTimeout
         clearTimeout(timerTimeout);
         // cleanup request and response
@@ -29390,10 +29536,10 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
     // init onError
     onError = function (error) {
         clearTimeout(timerTimeout);
-        if (!error || options.done) {
+        if (!error || options.isDone) {
             return;
         }
-        options.done = true;
+        options.isDone = true;
         // cleanup client
         local.streamListCleanup([options.clientRequest, options.clientResponse]);
         nextMiddleware(error);
@@ -29820,17 +29966,12 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
     if (!module || module === &#x27;.&#x27; || module.indexOf(&#x27;/&#x27;) &#x3e;= 0) {
         return require(&#x27;path&#x27;).resolve(process.cwd(), module || &#x27;&#x27;);
     }
-    // search builtin
-    if (Object.keys(process.binding(&#x27;natives&#x27;)).indexOf(module) &#x3e;= 0) {
-        return module;
-    }
     // search modulePathList
-    [
-        [&#x27;node_modules&#x27;],
-        modulePathList,
-        require(&#x27;module&#x27;).globalPaths
-    ].some(function (modulePathList) {
-        modulePathList.some(function (modulePath) {
+    [&#x27;node_modules&#x27;]
+        .concat(modulePathList)
+        .concat(require(&#x27;module&#x27;).globalPaths)
+        .concat([process.env.HOME + &#x27;/node_modules&#x27;, &#x27;/usr/local/lib/node_modules&#x27;])
+        .some(function (modulePath) {
             try {
                 tmp = require(&#x27;path&#x27;).resolve(process.cwd(), modulePath + &#x27;/&#x27; + module);
                 result = require(&#x27;fs&#x27;).statSync(tmp).isDirectory() &#x26;&#x26; tmp;
@@ -29838,8 +29979,6 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
             } catch (ignore) {
             }
         });
-        return result;
-    });
     return result || &#x27;&#x27;;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -30450,7 +30589,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
             // ensure counter &#x3c;= 0
             onParallel.counter = -Math.abs(onParallel.counter);
         }
-        // call onError when done
+        // call onError when isDone
         if (onParallel.counter &#x3c;= 0) {
             onError(error, data);
             return;
@@ -30479,7 +30618,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
  * this function will
  * 1. async-run onEach in parallel,
  *    with the given options.rateLimit and options.retryLimit
- * 2. call onError when done
+ * 2. call onError when isDone
  */
 </span>    var ii, onEach2, onParallel;
     onEach2 = function () {
@@ -30567,7 +30706,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
         // ensure counter &#x3c;= 0
         onParallel.counter = -Math.abs(onParallel.counter);
     }
-    // call onError when done
+    // call onError when isDone
     if (onParallel.counter &#x3c;= 0) {
         onError(error, data);
         return;
@@ -30627,7 +30766,7 @@ var n=t.length;--n&#x3e;=0;)if(t[n]==e)return!0;return!1}</pre></li>
         // ensure counter &#x3c;= 0
         onParallel.counter = -Math.abs(onParallel.counter);
     }
-    // call onError when done
+    // call onError when isDone
     if (onParallel.counter &#x3c;= 0) {
         onError(error, data);
         return;
@@ -30890,7 +31029,7 @@ W(U(!0),u,n);return W(v(&#x22;binary&#x22;,s,e,a),t,n)}return e}function X(e){re
                 [&#x27;-c&#x27;, &#x27;find . -type f | grep -v &#x27; +
 /* jslint-ignore-begin */
 &#x27;&#x22;\
-/\\.\\|.*\\(\\b\\|_\\)\\(\\.\\d\\|\
+/\\.\\|\\(\\b\\|_\\)\\(\\.\\d\\|\
 archive\\|artifact\\|\
 bower_component\\|build\\|\
 coverage\\|\
@@ -30905,7 +31044,7 @@ node_module\\|\
 rollup\\|\
 swp\\|\
 tmp\\|\
-vendor\\)\\(\\b\\|[_s]\\)\
+vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
 &#x22; &#x27; +
 /* jslint-ignore-end */
                     &#x27;| tr &#x22;\\n&#x22; &#x22;\\000&#x22; | xargs -0 grep -in &#x22;&#x27; +
@@ -30943,7 +31082,7 @@ vendor\\)\\(\\b\\|[_s]\\)\
     // init process.stdout
     process.stdout._writeDefault = process.stdout._writeDefault ||
         process.stdout._write;
-    process.stdout._write = function (chunk, encodin ...</pre></li>
+    process.stdout._write = function (chunk, en ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -30970,13 +31109,72 @@ vendor\\)\\(\\b\\|[_s]\\)\
 
 
     <h2>
-        <a href="#apidoc.element.global.utility2.swgg.requireExampleJsFromReadme" id="apidoc.element.global.utility2.swgg.requireExampleJsFromReadme">
-        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>requireExampleJsFromReadme
+        <a href="#apidoc.element.global.utility2.swgg.requireInSandbox" id="apidoc.element.global.utility2.swgg.requireInSandbox">
+        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>requireInSandbox
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requireInSandbox = function (file) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will require the file in a sandbox-lite env
+ */
+</span>    var exports, mockDict, mockList, tmp;
+    mockList = [
+        [ local.global, {
+            setImmediate: local.nop,
+            setInterval: local.nop,
+            setTimeout: local.nop
+        }]
+    ];
+    [
+        [local, &#x27;child_process&#x27;],
+        [local, &#x27;cluster&#x27;],
+        [local, &#x27;http&#x27;],
+        [local, &#x27;https&#x27;],
+        [local, &#x27;net&#x27;],
+        [local, &#x27;repl&#x27;],
+        [local.events, &#x27;prototype&#x27;],
+        [local.global, &#x27;process&#x27;],
+        [local.stream, &#x27;prototype&#x27;],
+        [process, &#x27;stdin&#x27;]
+    ].forEach(function (element) {
+        tmp = element[0][element[1]];
+        mockDict = {};
+        Object.keys(tmp).forEach(function (key) {
+            if (typeof tmp[key] === &#x27;function&#x27; &#x26;&#x26; !(
+                    /^(?:fs\.Read|fs\.read|process\.binding|process\.dlopen)/
+                ).test(element[1] + &#x27;.&#x27; + key)) {
+                mockDict[key] = function () {
+                    return;
+                };
+                // coverage-hack
+                mockDict[key]();
+            }
+        });
+        mockList.push([ tmp, mockDict ]);
+    });
+    local.testMock(mockList, function (onError) {
+        local.tryCatchOnError(function () {
+            exports = require(file);
+        }, console.error);
+        onError();
+    }, local.onErrorThrow);
+    return exports;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.global.utility2.swgg.requireReadme" id="apidoc.element.global.utility2.swgg.requireReadme">
+        function <span class="apidocSignatureSpan">global.utility2.swgg.</span>requireReadme
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">requireExampleJsFromReadme = function () {
+    <li>description and source-code<pre class="apidocCodePre">requireReadme = function () {
 <span class="apidocCodeCommentSpan">/*
  * this function will require and export example.js embedded in README.md
  */
@@ -31562,7 +31760,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
 <span class="apidocCodeCommentSpan">/*
  * this function will defer options.action until storage is ready
  */
-</span>    var data, done, objectStore, onError2, request, tmp;
+</span>    var data, isDone, objectStore, onError2, request, tmp;
     onError = onError || function (error) {
         // validate no error occurred
         console.assert(!error, error);
@@ -31578,10 +31776,10 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     case &#x27;browser&#x27;:
         onError2 = function () {
             /* istanbul ignore next */
-            if (done) {
+            if (isDone) {
                 return;
             }
-            done = true;
+            isDone = true;
             onError(
                 request &#x26;&#x26; (request.error || request.transaction.error),
                 data || request.result || &#x27;&#x27;
@@ -31885,7 +32083,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     <li>description and source-code<pre class="apidocCodePre">streamReadAll = function (stream, onError) {
 <span class="apidocCodeCommentSpan">/*
  * this function will concat data from the stream,
- * and pass it to onError when done reading
+ * and pass it to onError when isDone reading
  */
 </span>    var chunkList;
     chunkList = [];
@@ -31956,11 +32154,11 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
         return task;
     }
     task.onDone = function () {
-        // if already done, then do nothing
-        if (task.done) {
+        // if isDone, then do nothing
+        if (task.isDone) {
             return;
         }
-        task.done = true;
+        task.isDone = true;
         // cleanup timerTimeout
         clearTimeout(task.timerTimeout);
         // cleanup task
@@ -32286,7 +32484,8 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
 <span class="apidocCodeCommentSpan">/*
  * this function will create test-report artifacts
  */
-</span>    // print test-report summary
+</span>    testReport = local.objectSetDefault(testReport, { testPlatformList: [] });
+    // print test-report summary
     console.error(&#x27;\n&#x27; + new Array(56).join(&#x27;-&#x27;) + &#x27;\n&#x27; + testReport.testPlatformList
         .filter(function (testPlatform) {
             // if testPlatform has no tests, then filter it out
@@ -32338,8 +32537,11 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     // if any test failed, then exit with non-zero exit-code
     console.error(&#x27;\n&#x27; + local.env.MODE_BUILD +
         &#x27; - &#x27; + testReport.testsFailed + &#x27; failed tests\n&#x27;);
-    // exit with number of tests failed
-    local.exit(testReport.testsFailed);
+    // print test-report detail
+    if (testReport.testsFailed) {
+        console.error(&#x27;\n&#x27; + JSON.stringify(testReport, null, 4) + &#x27;\n&#x27;);
+    }
+    return testReport;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -32522,7 +32724,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
             });
         }
     });
-    // visual notification - update test-progress until done
+    // visual notification - update test-progress until isDone
     // init testReportDiv1 element
     if (local.modeJs === &#x27;browser&#x27;) {
         testReportDiv1 = document.querySelector(&#x27;#testReportDiv1&#x27;);
@@ -32530,7 +32732,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
     testReportDiv1 = testReportDiv1 || { style: {} };
     testReportDiv1.style.display = &#x27;block&#x27;;
     testReportDiv1.innerHTML = local.testReportMerge(testReport, {});
-    // update test-report status every 1000 ms until done
+    // update test-report status every 1000 ms until isDone
     timerInterval = setInterval(function () {
         // update testReportDiv1 in browser
         testReportDiv1.innerHTML = local.testReportMerge(testReport, {});
@@ -32549,8 +32751,8 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
         onError = function (error) {
             // cleanup timerTimeout
             clearTimeout(timerTimeout);
-            // if testCase already done, then fail testCase with error for ending again
-            if (testCase.done) {
+            // if testCase isDone, then fail testCase with error for ending again
+            if (testCase.isDone) {
                 error = error || new Error(&#x27;callback in testCase &#x27; +
                     testCase.name + &#x27; called multiple times&#x27;);
             }
@@ -32567,7 +32769,7 @@ e}var r=jsp.tokenizer(e),i=0,s;return a.context=function(){return r.context.appl
                     &#x27;invalid errorStack &#x27; + testCase.errorStack
                 );
             }
-            // if already done, then do nothing ...</pre></li>
+            // if tests isDone, then do nothing ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -34230,7 +34432,7 @@ try{return t()}catch(n){if(n!==EX_EOF)throw n;l(e)}}function T(e){if(e!=null)ret
             [&#x27;-c&#x27;, &#x27;find . -type f | grep -v &#x27; +
 <span class="apidocCodeCommentSpan">/* jslint-ignore-begin */
 </span>&#x27;&#x22;\
-/\\.\\|.*\\(\\b\\|_\\)\\(\\.\\d\\|\
+/\\.\\|\\(\\b\\|_\\)\\(\\.\\d\\|\
 archive\\|artifact\\|\
 bower_component\\|build\\|\
 coverage\\|\
@@ -34245,7 +34447,7 @@ node_module\\|\
 rollup\\|\
 swp\\|\
 tmp\\|\
-vendor\\)\\(\\b\\|[_s]\\)\
+vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
 &#x22; &#x27; +
 /* jslint-ignore-end */
                 &#x27;| tr &#x22;\\n&#x22; &#x22;\\000&#x22; | xargs -0 grep -in &#x22;&#x27; +
